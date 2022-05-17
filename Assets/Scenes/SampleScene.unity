@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 1104816880}
   - component: {fileID: 1104816879}
   - component: {fileID: 1104816878}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -589,7 +589,7 @@ MonoBehaviour:
   target: {fileID: 1104816881}
   layer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!65 &2119280684
 BoxCollider:
   m_ObjectHideFlags: 0

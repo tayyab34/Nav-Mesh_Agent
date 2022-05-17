@@ -18,10 +18,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        Debug.DrawRay(transform.position, transform.forward * 10,Color.black);
-        if (Physics.SphereCast(transform.position, 0.5f, transform.forward, out hit, 10, layer, QueryTriggerInteraction.UseGlobal))
+        if (Physics.SphereCast(transform.position+Vector3.up, 1f, transform.forward, out hit, 10, layer, QueryTriggerInteraction.UseGlobal))
         {
-            Debug.Log(hit.transform.name);
+            Destroy(hit.transform.gameObject);
         }
     }
 }
